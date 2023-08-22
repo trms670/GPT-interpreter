@@ -89,6 +89,8 @@ This file was written by my colleague Freeman. It contains the *box_image* funct
 ## follow_drone.py
 ### Requirements
 Microsoft released a simulator for drones called *AirSim* that is built on Unreal Engine designed for AI experimentation. In order to run this program, you need to build AirSim on your computer. Here is how to build AirSim on [macOS](https://microsoft.github.io/AirSim/build_macos/).
+
+Please note that Microsoft AirSim uses the *NED coordinate system* (+X is North, +Y is East, +Z is Down).
 ### Contents
 This file runs the Microsoft simulator using the output from the prompt defined in `drone3.py` and the bounding box coordinates retrieved from `object_detection.py`. The program gets the current drone location, takes a picture using the drone camera, and passes the image to the *box_image* function from `object_detection.py`. The program then filters through all bounding boxes until it finds the coordinates of the specific object it is looking for, and then passes those coordinates into the *gpt-4* interpreter from `drone3.py`. Once it gets the next appropriate drone command, the drone will move accordingly. This process repeats until the drone is close enough to the object.
 
