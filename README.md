@@ -44,6 +44,7 @@ This file requires the installation of [matplotlib](https://matplotlib.org/stabl
 Using a 3D coordinate system, the file initializes initial drone and object locations as well as the height and width of the object. Using matplotlib, the program plots a 3D graph of the drone and the object with its bounding box.
 
 Here is an example of this 3D graph:
+
 <img width="701" alt="Screen Shot 2023-07-17 at 10 15 24 AM" src="https://github.com/trms670/GPT-interpreter/assets/107161660/f06b9c26-cd3c-4ca7-ae36-3187dc2652a8">
 
 The blue triangle represents the object and the red circle represents the drone. 
@@ -51,6 +52,7 @@ The blue triangle represents the object and the red circle represents the drone.
 Based on these locations, the program calculates the relative object x and z coordinates and plots these on a 2D graph to show if the object is centered in the image.
 
 Here is an example of this 2D graph:
+
 <img width="699" alt="Screen Shot 2023-07-17 at 10 15 36 AM" src="https://github.com/trms670/GPT-interpreter/assets/107161660/ff5ba18a-6ad3-4f43-a0cf-f7dbb8de2418">
 
 The blue triangle represents the object with the bounding box around it. The yellow region in the center represents the area where the object is considered centered in the image.
